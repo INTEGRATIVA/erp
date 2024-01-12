@@ -32,4 +32,5 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('/pessoa',[PessoaController::class, 'index'])->name('pessoa.index');
+
 require __DIR__.'/auth.php';
