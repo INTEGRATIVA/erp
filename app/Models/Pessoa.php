@@ -9,7 +9,8 @@ use Illuminate\Database\Eloquent\Model;
 class Pessoa extends Model
 {
     use HasFactory;
-    protected $fillable = ['nome', 'email','telefone'];
+    protected $fillable  = ['nome','email','telefone'];
+    protected $table='pessoa';
 
     public function pessoaFisica(){
         return $this->hasOne(PessoaFisica::class);

@@ -9,4 +9,5 @@ class PessoaJuridica extends Model
 {
     use HasFactory;
     protected $fillable =['data_abertura','cnpj','insc_municipal','insc_estadual'];
+    protected $table="pessoa_juridica";
 }

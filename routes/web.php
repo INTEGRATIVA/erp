@@ -31,6 +31,10 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('/pessoa',[PessoaController::class, 'index'])->name('pessoa.index');
-
+Route::middleware('auth')->group(function () {
+    Route::get('/pessoa',[PessoaController::class, 'index'])->name('pessoa.index');
+    Route::get('/pessoa/getAll',[PessoaController::class, 'getAll'])->name('pessoa.getAll');
+    Route::post('/pessoa',[PessoaController::class, 'store'])->name('pessoa.store');
+    Route::delete('/pessoa/{id}',[PessoaController::class, 'destroy'])->name('pessoa.destroy');
+});
 require __DIR__.'/auth.php';

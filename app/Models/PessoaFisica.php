@@ -9,9 +9,11 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class PessoaFisica extends Model
 {
     use HasFactory;
-    protected $fillable = ['data_nascimento', 'cpf', 'rg','rg_orgao_emissor'];
+    protected $fillable = ['cpf', 'rg','rg_orgao_emissor','data_nascimento'];
+    protected $table = "pessoa_fisica";
 
     public function pessoa():BelongsTo {
+        return $this->belongsTo(Pessoa::class);
 
     }
 }

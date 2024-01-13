@@ -29,6 +29,20 @@ class PessoaController extends Controller
     public function store(Request $request)
     {
         //
+        try {
+            $tipo_pessoa = $request->get('tipo_pessoa');
+
+            $pessoa = new Pessoa();
+
+            if($tipo_pessoa == 'pf'){
+                $pessoa = $pessoa->create($request->all())->pessoaFisica()->create($request->all());
+            }else{
+                $pessoa = $pessoa->create($request->all())->pessoaJuridica()->create($request->all());
+            }
+            return response()->json($pessoa, 201);
+        } catch (\Throwable $th) {
+            return response()->json($th, 501);
+        }
     }
 
     /**
@@ -58,8 +72,22 @@ class PessoaController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Pessoa $pessoa)
+    public function destroy(Pessoa $pessoa,$id)
     {
-        //
+        try {
+            $pessoa->destroy($id);
+            return response()->json($id,201);
+
+        } catch (\Throwable $th) {
+            return response()->json($th,501);
+        }
+    }
+
+    public function getAll(){
+        try {
+            return response()->json(Pessoa::all(), 201);
+        } catch (\Throwable $th) {
+            return response()->json($th, 201);
+        }
     }
 }

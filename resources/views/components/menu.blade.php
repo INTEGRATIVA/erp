@@ -3,7 +3,7 @@
 
     <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
         <div class="app-brand demo">
-          <a href="index.html" class="app-brand-link">
+          <a href="#" class="app-brand-link">
             {{-- <span class="app-brand-logo demo">
               <x-application-logo/>
             </span> --}}
@@ -36,7 +36,7 @@
             <ul class="menu-sub">
               <li class="menu-item">
                 <a href="{{route('pessoa.index')}}" class="menu-link">
-                  <div data-i18n="Without menu">Terceiro</div>
+                  <div data-i18n="Without menu">Membros</div>
                 </a>
               </li>
               {{-- <li class="menu-item">

@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('insc_municipal');
             $table->string('insc_estadual');
             $table->unsignedBigInteger('pessoa_id');
-            $table->foreign('pessoa_id')->references('id')->on('pessoa');
+            $table->foreign('pessoa_id')->references('id')->on('pessoa')->onDelete('cascade');
             $table->timestamps();
         });
     }

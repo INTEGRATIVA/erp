@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('rg');
             $table->string('rg_orgao_emissor');
             $table->unsignedBigInteger('pessoa_id');
-            $table->foreign('pessoa_id')->references('id')->on('pessoa');
+            $table->foreign('pessoa_id')->references('id')->on('pessoa')->onDelete('cascade');
             $table->timestamps();
         });
     }
