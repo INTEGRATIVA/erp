@@ -17,7 +17,7 @@ services:
       - rede_erp
   db:
     image: mysql/mysql-server:5.7
-    container_name: mysql
+    container_name: db_integrativa
     restart: unless-stopped
     environment:
       MYSQL_DATABASE: ${DB_DATABASE}

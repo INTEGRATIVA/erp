@@ -20,6 +20,7 @@ RUN mkdir -p /home/$user/.composer && \
 
 WORKDIR /var/www
 
+
 USER $user
 
 # FROM php:8.3.2RC1-zts-alpine3.19

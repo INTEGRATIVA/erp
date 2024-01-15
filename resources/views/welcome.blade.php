@@ -42,6 +42,11 @@
         <section class="py-5 text-center container">
             <div class="row py-lg-5">
                 <div class="col-lg-6 col-md-8 mx-auto">
+                    <img src="{{asset('img/logo/integrativa.png')}}" class="rounded mx-auto d-block">
+                </div>
+            </div>
+            <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
                     <h1 class="fw-light">Integrativa Med</h1>
                     <p class="lead text-muted">Nossa paixão é oferecer cuidados de saúde excepcionais, impulsionados pela inovação e empatia. Com uma equipe dedicada de profissionais médicos e tecnológicos, buscamos transformar a experiência de cuidados médicos..</p>
                 </div>
