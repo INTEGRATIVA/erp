@@ -40,10 +40,17 @@
                 </a>
               </li>
             </ul>
+            <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="{{route('cadastrar.marcadores')}}" class="menu-link">
+                    <div data-i18n="Without menu">Marcadores</div>
+                  </a>
+                </li>
+              </ul>
           </li>
 
           {{-- RH --}}
-          <li class="menu-item active">
+          <li class="menu-item">
             <a href="javascript:void(0);" class="menu-link menu-toggle">
               <i class="menu-icon tf-icons bx bx-user"></i>
               <div data-i18n="Layouts">RH</div>
@@ -56,6 +63,7 @@
               </li>
             </ul>
           </li>
+
 
            {{-- COMERCIAL --}}
            <li class="menu-item">
@@ -76,6 +84,21 @@
               </li>
             </ul>
 
+          </li>
+
+          {{-- SAUDE --}}
+          <li class="menu-item">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+              <i class="menu-icon tf-icons bx bx-health"></i>
+              <div data-i18n="Layouts">Saude</div>
+            </a>
+            <ul class="menu-sub">
+              <li class="menu-item">
+                <a href="{{route('exame.interpretacao')}}" class="menu-link">
+                  <div data-i18n="Without menu">Interpreração de exame</div>
+                </a>
+              </li>
+            </ul>
           </li>
 {{--
           <li class="menu-header small text-uppercase">

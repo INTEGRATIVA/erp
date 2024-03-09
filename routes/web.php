@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PessoaController;
+use App\Http\Controllers\MarcadorController;
+use App\Http\Controllers\ExameController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -37,4 +39,24 @@ Route::middleware('auth')->group(function () {
     Route::post('/pessoa',[PessoaController::class, 'store'])->name('pessoa.store');
     Route::delete('/pessoa/{id}',[PessoaController::class, 'destroy'])->name('pessoa.destroy');
 });
+
+// Cadastro
+Route::middleware('auth')->group(function () {
+    Route::get('/cadastro/marcadores', [MarcadorController::class, 'index'])->name('cadastrar.marcadores');
+    Route::post('/cadastro/marcadores',[MarcadorController::class, 'store']);
+    Route::get('/cadastro/marcadores/getAll',[MarcadorController::class, 'getAll']);
+    Route::delete('/cadastro/marcadores/{id}',[MarcadorController::class, 'destroy']);
+    Route::get('/cadastro/marcadores/{id}',[MarcadorController::class, 'show']);
+});
+
+// EXAME
+Route::middleware('auth')->group(function () {
+    Route::get('/exame/interpretacao', [ExameController::class, 'index'])->name('exame.interpretacao');
+    // Route::post('/cadastro/marcadores',[MarcadorController::class, 'store']);
+    // Route::get('/cadastro/marcadores/getAll',[MarcadorController::class, 'getAll']);
+    // Route::delete('/cadastro/marcadores/{id}',[MarcadorController::class, 'destroy']);
+    // Route::get('/cadastro/marcadores/{id}',[MarcadorController::class, 'show']);
+});
+
+
 require __DIR__.'/auth.php';
