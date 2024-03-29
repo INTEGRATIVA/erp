@@ -86,6 +86,27 @@
 
           </li>
 
+          {{-- Cursos --}}
+           <li class="menu-item">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+              <i class="menu-icon tf-icons bx bx-money"></i>
+              <div data-i18n="Layouts">Cursos</div>
+            </a>
+            <ul class="menu-sub">
+              <li class="menu-item">
+                <a href="#" class="menu-link">
+                  <div data-i18n="Without menu">Impotencia</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">
+                  <div data-i18n="Without menu">Outros</div>
+                </a>
+              </li>
+            </ul>
+
+          </li>
+
           {{-- SAUDE --}}
           <li class="menu-item">
             <a href="javascript:void(0);" class="menu-link menu-toggle">
