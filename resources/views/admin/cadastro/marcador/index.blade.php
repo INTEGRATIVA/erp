@@ -24,6 +24,8 @@
                     <th>Minimo</th>
                     <th>Maximo</th>
                     <th>Ações</th>
+                    <th>Sexo</th>
+                    <th>Menopausa</th>
                 </tr>
             </thead>
             <tbody class="table-border-bottom-0" id="lista_terceiros">
