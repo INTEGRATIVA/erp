@@ -7,6 +7,7 @@
             {{-- <span class="app-brand-logo demo">
               <x-application-logo/>
             </span> --}}
+          
             <span class="app-brand-text demo menu-text fw-bolder ms-0">Integrativa Med</span>
           </a>
 

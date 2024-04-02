@@ -9,5 +9,7 @@ class Marcador extends Model
 {
     use HasFactory;
     protected $fillable  = ['nome','minimo','maximo', 'masculino', 'gestante' ];
-    protected $table='marcador';
+    protected $table='marcador'; 
+    
+
 }

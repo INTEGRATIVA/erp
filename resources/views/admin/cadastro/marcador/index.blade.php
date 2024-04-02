@@ -23,9 +23,9 @@
                     <th>Nome</th>
                     <th>Minimo</th>
                     <th>Maximo</th>
-                    <th>Ações</th>
                     <th>Sexo</th>
                     <th>Menopausa</th>
+                    <th>Ações</th>
                 </tr>
             </thead>
             <tbody class="table-border-bottom-0" id="lista_terceiros">
@@ -85,6 +85,21 @@
                                         type="text"
                                         class="form-control"
                                         id="maximo"
+                                    />
+                                </div>
+                                <div class='col-md-3 col-sm-6'>
+                                    <label for="name">Masculino</label>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="masculino"
+                                    />
+                                    <div class='col-md-3 col-sm-6'>
+                                    <label for="name">gestante</label>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="gestante"
                                     />
                                 </div>
                             </div>
