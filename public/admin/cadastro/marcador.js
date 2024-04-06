@@ -109,6 +109,8 @@ const edit=(id)=>{
             form.nome.value=response.nome,
             form.minimo.value=response.minimo,
             form.maximo.value =response.maximo
+            form.masculino.value =response.masculino
+            form.feminino.value =response.feminino
             form.id.value =response.id
         })
         .catch((err) => console.error(err));
