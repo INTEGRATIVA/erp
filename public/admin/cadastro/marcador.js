@@ -8,6 +8,8 @@ let form = {
     nome: "",
     min: "",
     max: "",
+    masc:"",
+    fem:""
 };
 
 function registerElements() {
