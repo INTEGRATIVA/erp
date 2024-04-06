@@ -35,6 +35,9 @@ const store = () => {
         nome: form.nome.value,
         minimo: form.minimo.value,
         maximo: form.maximo.value,
+        masculino: form.masculino.value,
+        feminino: form.feminio.value,
+        
         id: form.id.value
     };
 
