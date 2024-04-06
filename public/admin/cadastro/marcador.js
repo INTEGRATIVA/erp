@@ -132,6 +132,12 @@ const renderTable = (data) => {
                 ${e.maximo}
             </td>
             <td>
+                ${e.masculino}
+            </td>
+            <td>
+                ${e.feminino}
+            </td>
+            <td>
                 <div class="dropdown">
                     <button
                         type="button"
@@ -166,6 +172,9 @@ const clearForm=()=>{
     form.nome.value="",
     form.minimo.value="",
     form.maximo.value =""
+    form.masculino.value ="",
+    form.feminino.value =""
+
     form.id.value =""
 }
 
