@@ -34,7 +34,7 @@
         </table>
     </div>
 
-    {{-- MODAL - FORMULARIO CADASTRO TERCEIRO --}}
+    {{-- MODAL - FORMULARIO CADASTRO MARCADORES --}}
     <div
         class="modal fade"
         id="exampleModal"
@@ -59,7 +59,7 @@
                 <div class="modal-body">
                     <!-- CONTEUDO FORMULARIO -->
                     <form id="form_marcador">
-                        <!-- DADOS PESSOA -->
+                        <!-- DADOS MARCADOR -->
                         <input type="hidden" name="id" id="id" />
                         <div>
                             <div class="row">
