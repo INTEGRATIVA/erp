@@ -23,8 +23,8 @@
                     <th>Nome</th>
                     <th>Minimo</th>
                     <th>Maximo</th>
-                    <th>Sexo</th>
-                    <th>Menopausa</th>
+                    <th>Masculino</th>
+                    <th>Feminino</th>
                     <th>Ações</th>
                 </tr>
             </thead>
@@ -95,11 +95,11 @@
                                         id="masculino"
                                     />
                                     <div class='col-md-3 col-sm-6'>
-                                    <label for="name">gestante</label>
+                                    <label for="name">Feminino</label>
                                     <input
                                         type="text"
                                         class="form-control"
-                                        id="gestante"
+                                        id="feminino"
                                     />
                                 </div>
                             </div>
