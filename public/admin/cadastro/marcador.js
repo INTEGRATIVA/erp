@@ -16,6 +16,8 @@ function registerElements() {
     form.nome = document.getElementById("nome");
     form.minimo = document.getElementById("minimo");
     form.maximo = document.getElementById("maximo");
+    form.masculino = document.getElementById("masculino");
+    form.feminino = document.getElementById("feminino");    
     form.id = document.getElementById("id");
 }
 
