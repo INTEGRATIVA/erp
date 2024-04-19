@@ -35,9 +35,7 @@ class MarcadorController extends Controller
                 $marcador->nome = $request->input('nome');
                 $marcador->minimo = $request->input('minimo');
                 $marcador->maximo = $request->input('maximo');
-                $marcador->maximo = $request->input('masculino');
-                $marcador->maximo = $request->input('feminino');
-
+                $marcador->genero = $request->input('genero');
                 $marcador->save();
             }else{
                 $marcador = $marcador->create($request->all());

@@ -8,16 +8,15 @@ let form = {
     nome: "",
     min: "",
     max: "",
-    masc:"",
-    fem:""
+    genero:"",
+
 };
 
 function registerElements() {
     form.nome = document.getElementById("nome");
     form.minimo = document.getElementById("minimo");
     form.maximo = document.getElementById("maximo");
-    form.masculino = document.getElementById("masculino");
-    form.feminino = document.getElementById("feminino");    
+    form.genero = document.getElementById("genero");
     form.id = document.getElementById("id");
 }
 
@@ -39,9 +38,7 @@ const store = () => {
         nome: form.nome.value,
         minimo: form.minimo.value,
         maximo: form.maximo.value,
-        masculino: form.masculino.value,
-        feminino: form.feminio.value,
-        
+        genero: form.genero.value,
         id: form.id.value
     };
 
@@ -116,8 +113,7 @@ const edit=(id)=>{
             form.nome.value=response.nome,
             form.minimo.value=response.minimo,
             form.maximo.value =response.maximo
-            form.masculino.value =response.masculino
-            form.feminino.value =response.feminino
+            form.genero.value =response.genero
             form.id.value =response.id
         })
         .catch((err) => console.error(err));
@@ -141,11 +137,9 @@ const renderTable = (data) => {
                 ${e.maximo}
             </td>
             <td>
-                ${e.masculino}
+                ${e.genero =='m'?"Masculino":"Feminino"}
             </td>
-            <td>
-                ${e.feminino}
-            </td>
+
             <td>
                 <div class="dropdown">
                     <button
@@ -181,9 +175,7 @@ const clearForm=()=>{
     form.nome.value="",
     form.minimo.value="",
     form.maximo.value =""
-    form.masculino.value ="",
-    form.feminino.value =""
-
+    form.genero.value ="",
     form.id.value =""
 }
 
