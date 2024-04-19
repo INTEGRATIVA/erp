@@ -29,9 +29,10 @@ const renderSelect = (dataSource)=>{
 
     // Step 4: Set the value and text content of the option.
     option.value = item.id;
-    option.textContent = item.nome;
+    option.textContent = `${item.nome} (${item.genero=='m'?"Masculino":"Feminino"})`;
     option.dataset.minimo = item.minimo
     option.dataset.maximo = item.maximo
+    option.dataset.genero = item.genero
 
     // Step 5: Append the option to the select element.
     selectElement.appendChild(option);
@@ -44,6 +45,7 @@ const handleMarcador = () => {
     var e = document.getElementById("marcador");
     var minimo = Number(e.options[e.selectedIndex].dataset.minimo)
     var maximo = Number(e.options[e.selectedIndex].dataset.maximo)
+    var genero = Number(e.options[e.selectedIndex].dataset.genero)
 
     validarMarcadorSelecionado(minimo, maximo)
 
