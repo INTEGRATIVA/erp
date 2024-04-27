@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('minimo');
             $table->string('maximo');
             $table->string('masculino');
-            $table->string('feminino');
+            $table->string('Feminino');
             $table->timestamps();
         });
     }
